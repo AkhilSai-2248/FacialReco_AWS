@@ -1,0 +1,18 @@
+amazon_cli
+──(akhilsai㉿akhilsai)-[~]
+└─$ aws configure        
+AWS Access Key ID [None]: AKIA2TZHV2SYC2BXOHE7
+AWS Secret Access Key [None]: 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
+Default region name [None]: 
+Default output format [None]: 
+                                                                        
+┌──(akhilsai㉿akhilsai)-[~]
+└─$ aws rekognition create-collection --collection-id facerecognition_collection --region us-east-1
+{
+    "StatusCode": 200,
+    "CollectionArn": "aws:rekognition:us-east-1:729690789040:collection/facerecognition_collection",
+    "FaceModelVersion": "6.0"
+}
+                                                                        
+
+                                                                        

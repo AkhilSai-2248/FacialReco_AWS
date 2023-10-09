@@ -1,0 +1,35 @@
+┌──(akhilsai㉿akhilsai)-[~]
+└─$ aws dynamodb create-table --table-name facerecognition \
+--attribute-definitions AttributeName=RekognitionId,AttributeType=S \
+--key-schema AttributeName=RekognitionId,KeyType=HASH \
+--provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
+--region us-east-1
+{
+    "TableDescription": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "RekognitionId",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "facerecognition",
+        "KeySchema": [
+            {
+                "AttributeName": "RekognitionId",
+                "KeyType": "HASH"
+            }
+        ],
+        "TableStatus": "CREATING",
+        "CreationDateTime": 1696775806.273,
+        "ProvisionedThroughput": {
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 1,
+            "WriteCapacityUnits": 1
+        },
+        "TableSizeBytes": 0,
+        "ItemCount": 0,
+        "TableArn": "arn:aws:dynamodb:us-east-1:729690789040:table/facerecognition",
+        "TableId": "67413019-8d83-4720-85a8-a5bbf2f721ff",
+        "DeletionProtectionEnabled": false
+    }
+}

@@ -1,0 +1,8 @@
+┌──(akhilsai㉿akhilsai)-[~]
+└─$ aws s3 mb s3://facereco_test0 --region us-east-1
+make_bucket failed: s3://facereco_test0 An error occurred (InvalidBucketName) when calling the CreateBucket operation: The specified bucket is not valid.
+                                                                        
+┌──(akhilsai㉿akhilsai)-[~]
+└─$ aws s3 mb s3://facerecotest0 --region us-east-1 
+make_bucket: facerecotest0
+
